@@ -11,7 +11,11 @@ mycursor=mydb.cursor()
 
 checkUserId = mycursor.execute("Select userId from registered_users r where r.userId=? and r.password=?",(userId,password))
 
-if checkUserId !=0
+if checkUserId !=0:
+    alert()
+    
+else:
+    
     
 
 
