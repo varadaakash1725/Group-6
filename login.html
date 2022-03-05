@@ -2,18 +2,29 @@
 <head>
     <title>Login</title>
     <link rel="stylesheet" href="styles.css">
+    <script type = 'text/javascript'>
+        function Redirect(){
+        var user = document.getElementById('username').value;
+        if(user == 'HNI'){
+            window.location = "appointments.html";
+        }else if(user == 'WM'){
+            window.location = 'dashboard.html';
+        }}
+    </script>
 </head>
 <body>
     <div class="wrapper">
         <h1>Login</h1>
-        <form>
-            <input type="text" placeholder="Username">
+        <form >
+            <input type="text" placeholder="Username" id="username">
             <input type="password" placeholder="Password">
-            <button>Submit</button>
+            
+            <input type = "button" value="submit" onclick = "Redirect();" ></i>
         </form>
         <p>
             New User? <a href="register.html">Signup here!</a>
         </p>
     </div>
+    
 </body>
 </html>
